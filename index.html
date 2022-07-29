@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/zicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<body>
+    <div class="contaner">
+        <h1 class="title">
+            Comment
+        </h1>
+        <div class="inputs">
+            <input type="text" placeholder="Enter Your Comment" id="com"><br>
+            <button id="add">ADD</button>
+            <button id="delete">Delet</button>
+        </div>
+        <div id="comments">
+        </div>
+    </div>
+    <script>
+        
+function delet(i) {
+    comments.splice(i,1);
+    localStorage.comments = JSON.stringify(comments);
+    show()
+}
+
+delet()
+    </script>
+<script src="main.js"></script>
+</body>
+</html>

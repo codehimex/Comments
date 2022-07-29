@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+body{
+    text-align: center;
+}
+.title{
+    margin: 60px 0;
+    position: relative;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.title::before{
+    content: "Comment";
+    position: absolute;
+    left: 38%;
+    top: -30px;
+    font-size: 80px;
+    text-transform: uppercase;
+    opacity: .3;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #333;
+}
+.inputs input{
+    background-color: white;
+    border: #383838 2px solid;
+    width: 18%;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.inputs #add{
+    background-color: #12e243;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.inputs #delete{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.comments{
+    margin-top: 40px;
+}
+.comment{
+    background-color: #eee;
+    width: 32%;
+    margin: auto;
+    padding: 14px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+.comment h2{
+    font-size: 20px;
+    color: black;
+}
+#delet{
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+}
